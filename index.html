@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RealLocale — List Local. Sell Fast. Own Your Area.</title>
+  <meta name="description"
+    content="RealLocale is India's first hyper-local real estate platform where brokers post listings only within their own pincode 2 sq km area of operation." />
+  <link rel="icon" href="assets/logo-mark.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <img src="assets/logo-mark.svg" alt="RealLocale" />
+      </a>
+
+      <nav class="main-nav" id="mainNav">
+        <a href="index.html#top">Home</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#how-it-works">How it Works</a>
+        <a href="index.html#why-hyperlocale">Why Go HyperLocale</a>
+        <a href="index.html#what-you-get">What you get</a>
+        <a href="index.html#pricing">Pricing</a>
+        <a href="index.html#faq">FAQ</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="index.html#lead-form" class="btn btn-primary">Join Now</a>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="hero-copy">
+        <span class="badge">India's first hyper-local real estate platform
+        </span>
+        <h1>List Local.Sell Fast. <span class="text-gold">Own Your Area.</span></h1>
+        <p class="hero-lead">RealLocale helps brokers showcase properties and attract serious buyers and sellers within
+          their own pincode and 2 sq km area of operation.</p>
+
+
+
+        <ul class="hero-points">
+          <li><span class="check">✓</span> Verified brokers only</li>
+          <li><span class="check">✓</span> Focused local access
+          </li>
+          <li><span class="check">✓</span> Genuine area expertise
+          </li>
+          <li><span class="check">✓</span> Genuine area expertise
+          </li>
+        </ul>
+
+        <div class="hero-cta">
+          <a href="#lead-form" class="btn btn-primary">Check Your Zone</a>
+          <a href="#how-it-works" class="btn btn-outline-light">See the benefits</a>
+        </div>
+        <div class="rating">
+          <span class="stars">★★★★★</span>
+          <span>Build a stronger presence in the neighbourhood you know best</span>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="zone-card">
+          <div class="zone-ring ring-1"></div>
+          <div class="zone-ring ring-2"></div>
+          <div class="zone-pin">
+            <img src="assets/hero-home-logo.png" alt="RealLocale zone" />
+          </div>
+          <div class="float-card fc-1">📍 2 km² Zone</div>
+          <div class="float-card fc-2">✓ 1 Broker / Pincode</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lead Capture Form -->
+  <section class="lead-form-section" id="lead-form">
+    <div class="container lead-inner">
+      <div class="lead-copy">
+        <h2>Check If Your Zone Is Available</h2>
+        <p>Contact us with your pincode and locality to check whether your RealLocale zone is available.</p>
+        <p class="fine-print">*Availability is subject to verification, zone rules, and subscription approval.</p>
+      </div>
+
+      <form class="lead-form" id="leadForm">
+        <div class="form-grid">
+          <div class="form-field">
+            <label for="lf-name">Name</label>
+            <input type="text" id="lf-name" name="name" required />
+          </div>
+          <div class="form-field">
+            <label for="lf-mobile">Mobile number</label>
+            <input type="tel" id="lf-mobile" name="mobile" required />
+          </div>
+          <div class="form-field">
+            <label for="lf-email">Email address</label>
+            <input type="email" id="lf-email" name="email" required />
+          </div>
+          <div class="form-field">
+            <label for="lf-city">City</label>
+            <input type="text" id="lf-city" name="city" required />
+          </div>
+          <div class="form-field">
+            <label for="lf-pincode">Pin code</label>
+            <input type="text" id="lf-pincode" name="pincode" required />
+          </div>
+          <div class="form-field">
+            <label for="lf-locality">Locality or neighbourhood</label>
+            <input type="text" id="lf-locality" name="locality" required />
+          </div>
+          <div class="form-field">
+            <label for="lf-broker">Broker or company name</label>
+            <input type="text" id="lf-broker" name="broker" required />
+          </div>
+          <div class="form-field">
+            <label for="lf-rera">RERA registration number</label>
+            <input type="text" id="lf-rera" name="rera" />
+          </div>
+          <div class="form-field full">
+            <label for="lf-experience">Years of experience</label>
+            <input type="number" id="lf-experience" name="experience" min="0" />
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary full">Check Zone Availability</button>
+        <p class="form-success" id="leadSuccess">Thank you! Our team will get in touch to confirm your zone
+          availability.</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="problem-redesign" id="about">
+    <div class="container problem-redesign-inner">
+      <div class="problem-redesign-copy">
+        <span class="eyebrow">THE PROBLEM WITH GENERAL PROPERTY PORTALS</span>
+        <h2>Broad visibility does not always mean <span class="text-gold">better business.</span></h2>
+        <p>Large property portals may offer broad visibility, but broad visibility does not always mean better business
+          for every broker.</p>
+        <p class="sub-text">In crowded marketplaces, brokers often face challenges that make it harder to build trust,
+          stand out, and grow a local business.</p>
+
+        <div class="problem-callout">
+          <p>RealLocale takes a different approach by focusing on the broker, the neighbourhood, and the local client
+            relationship.</p>
+        </div>
+      </div>
+
+      <div class="problem-cards-grid">
+        <div class="problem-card">
+          <div class="problem-icon"></div>
+          <p>Too many unrelated listings.</p>
+        </div>
+        <div class="problem-card">
+          <div class="problem-icon"></div>
+          <p>Selling your leads and data mining.</p>
+        </div>
+        <div class="problem-card">
+          <div class="problem-icon"></div>
+          <p>No profile and number visibility.</p>
+        </div>
+        <div class="problem-card">
+          <div class="problem-icon"></div>
+          <p>Competition from outside brokers.</p>
+        </div>
+        <div class="problem-card">
+          <div class="problem-icon"></div>
+          <p>Difficulty standing out in search.</p>
+        </div>
+        <div class="problem-card">
+          <div class="problem-icon"></div>
+          <p>Enquiries from non-serious clients.</p>
+        </div>
+        <div class="problem-card">
+          <div class="problem-icon"></div>
+          <p>Clients contacting multiple brokers.</p>
+        </div>
+        <div class="problem-card">
+          <div class="problem-icon"></div>
+          <p>Little recognition for area expertise.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- The Problem -->
+  <section class="problem">
+    <div class="container problem-inner">
+      <div class="problem-copy">
+        <h2>The Problem with <span class="text-gold">General Property Portals</span></h2>
+        <p>Large property portals may offer broad visibility, but broad visibility does not always mean better business
+          for every broker. In crowded marketplaces, brokers often face:</p>
+        <ul class="cross-list">
+          <li>Too many unrelated listings.</li>
+          <li>Selling your leads.</li>
+          <li>No profile and number visibility.</li>
+          <li>Data mining.</li>
+          <li>Competition from brokers outside the locality.</li>
+          <li>Difficulty standing out in search results.</li>
+          <li>Enquiries from Clients who are not serious.</li>
+          <li>Clients contacting several brokers at the same time.</li>
+          <li>Little recognition for genuine neighbourhood expertise.</li>
+          <li>Difficulty building a personal local brand.</li>
+        </ul>
+        <p class="callout">RealLocale takes a different approach by focusing on the broker, the neighbourhood, and the
+          local Clients relationship.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- How it works steps -->
+  <section class="how-it-works" id="how-it-works">
+    <div class="container">
+      <h2 class="section-title center">How <span class="text-gold">RealLocale</span> Works</h2>
+      <p class="section-sub center">Step by step process simplified.</p>
+      <p class="section-sub center">Real estate is local. Clients want brokers who understand the neighbourhood, the
+        streets, the buildings, upcoming developer projects, pricing, and the practical details that may not appear in a
+        standard property listing.</p>
+      <p class="section-sub center">RealLocale is designed to help brokers turn that local knowledge into a visible
+        business advantage.</p>
+
+      <div class="steps-grid">
+        <div class="step-card">
+          <div class="step-num">1</div>
+          <h3>Subscribe to Your Area
+          </h3>
+          <p>Choose your pincode and 2 km² area of operation. If the zone is available, it is yours to own.</p>
+        </div>
+        <div class="step-card">
+          <div class="step-num">2</div>
+          <h3>Get Verified
+          </h3>
+          <p>Upload basic documents. We verify you as a licensed, area-specialist broker.</p>
+        </div>
+        <div class="step-card">
+          <div class="step-num">3</div>
+          <h3>Start Posting
+          </h3>
+          <p>List properties, receive direct lead calls, and convert faster with your hyper-local knowledge.</p>
+        </div>
+        <div class="step-card">
+          <div class="step-num">4</div>
+          <h3>Engage With Your Community</h3>
+          <p>Post updates, neighbourhood tips, and useful local information to build your brand in your local zone.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Who it's for -->
+  <section class="who-for">
+    <div class="container">
+      <h2 class="section-title center">Who Is <span class="text-gold">RealLocale</span> For?</h2>
+
+      <div class="who-grid">
+        <div class="who-card">
+          <div class="who-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+              <circle cx="12" cy="7" r="4"></circle>
+            </svg>
+          </div>
+          <h3>Independent Brokers</h3>
+          <p>Build a professional online presence and become more visible in the area you serve.</p>
+        </div>
+        <div class="who-card">
+          <div class="who-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="4" y="2" width="16" height="20" rx="2" ry="2"></rect>
+              <path d="M9 22v-4h6v4"></path>
+              <path d="M8 6h.01"></path>
+              <path d="M16 6h.01"></path>
+              <path d="M12 6h.01"></path>
+              <path d="M12 10h.01"></path>
+              <path d="M12 14h.01"></path>
+              <path d="M16 10h.01"></path>
+              <path d="M16 14h.01"></path>
+              <path d="M8 10h.01"></path>
+              <path d="M8 14h.01"></path>
+            </svg>
+          </div>
+          <h3>Boutique Real Estate Firms</h3>
+          <p>Showcase your listings, team, and local expertise through your microsite.</p>
+        </div>
+        <div class="who-card">
+          <div class="who-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+              <line x1="8" y1="21" x2="16" y2="21"></line>
+              <line x1="12" y1="17" x2="12" y2="21"></line>
+            </svg>
+          </div>
+          <h3>Digital-First Real Estate Professionals</h3>
+          <p>Use a modern local platform to manage your profile, listings, enquiries, and area presence.</p>
+        </div>
+        <div class="who-card">
+          <div class="who-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+              <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+          </div>
+          <h3>Brokers Focused on a Specific Neighbourhood</h3>
+          <p>Strengthen your position as the trusted property specialist in your local zone.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Hyperlocal -->
+  <section class="hyperlocal-why" id="why-hyperlocale">
+    <div class="container">
+      <h2 class="section-title center">Why Go a<span class="text-gold">Hyper-Local?</span></h2>
+      <p class="section-sub center">A broker who knows a local area can offer more than a listing. They can provide
+        context, guidance, and practical knowledge that helps Clients make better decisions.</p>
+
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-num">84%</div>
+          <div class="stat-label">of Indian buyers prefer brokers with local knowledge.</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num">40%</div>
+          <div class="stat-label">Locality-specific brokers close deals faster than general brokers.</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num">100%</div>
+          <div class="stat-label">Area domination builds long-term referral networks and repeat clients</div>
+        </div>
+      </div>
+
+      <div class="reason-grid">
+        <div class="reason-card">
+          <h3>Local Knowledge Builds Trust
+          </h3>
+          <p>Clients want to know whether a neighbourhood suits their lifestyle, budget, commute, family requirements,
+            and future plans.
+
+          </p>
+        </div>
+        <div class="reason-card">
+          <h3>Focus Improves Visibility
+          </h3>
+          <p>A focused local profile is easier for Clients to understand than a general profile covering too many
+            unrelated areas.</p>
+        </div>
+        <div class="reason-card">
+          <h3>Strong Areas Create Strong Referrals
+          </h3>
+          <p>When your name becomes associated with a particular neighbourhood, satisfied Clients and local contacts can
+            become a long-term source of referrals.</p>
+        </div>
+        <div class="reason-card">
+          <h3>Local Expertise Supports Repeat Business
+          </h3>
+          <p>Property Clients may later return for another purchase, rental, sale, investment, or referral. A strong
+            local presence helps keep your brokerage top of mind.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- What you get -->
+  <section class="features" id="what-you-get">
+    <div class="container">
+      <h2 class="section-title center">What You Get With <span class="text-gold">RealLocale</span></h2>
+      <p class="section-sub center eyebrow" style="margin-top: 10px; margin-bottom: 30px;">Feature List</p>
+
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">🔒</div>
+          <h3>Exclusive Zone Access</h3>
+          <p>Exclusive access to your pincode 2 km².</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">✅</div>
+          <h3>Verified Badge</h3>
+          <p>Verified badge and profile.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🌐</div>
+          <h3>Personal Microsite</h3>
+          <p>Personal or company microsite.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">📄</div>
+          <h3>Custom Listing Page</h3>
+          <p>Custom local listing page.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">📈</div>
+          <h3>Local SEO Support</h3>
+          <p>Local traffic and SEO support.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🤖</div>
+          <h3>AI Listing Descriptions</h3>
+          <p>AI-generated listing descriptions.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">⭐</div>
+          <h3>Priority in Local Queries</h3>
+          <p>Priority in local buyer and seller queries.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section class="pricing" id="pricing">
+    <div class="container">
+      <h2 class="section-title center">Simple, Transparent <span class="text-gold">Pricing</span></h2>
+
+      <div class="price-single">
+        <div class="price-card featured">
+          <span class="ribbon">Launch Offer</span>
+          <h3>RealLocale Zone Access</h3>
+          <div class="price">₹4,999<span>/month</span></div>
+          <ul>
+            <li>✓ No commissions.</li>
+            <li>✓ No hidden fees.</li>
+            <li>✓ Cancel anytime.</li>
+          </ul>
+          <p class="price-note-text">Get focused access to your local area and build your presence as a verified,
+            area-specialist broker.</p>
+          <a href="#lead-form" class="btn btn-primary full">Check Zone Availability</a>
+        </div>
+      </div>
+      <p class="section-sub center small">*Pricing Note: Zone availability, verification, subscription activation, and
+        local access are subject to the applicable RealLocale terms.</p>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
+      <h2 class="section-title center">Frequently Asked Questions</h2>
+      <p class="section-sub center">Everything you need to know about RealLocale.</p>
+
+      <div class="faq-tabs" id="faqTabs">
+        <button class="faq-tab active" data-tab="general">General Questions</button>
+        <button class="faq-tab" data-tab="zone">Zone Related Questions</button>
+        <button class="faq-tab" data-tab="verification">Verification Related Questions</button>
+        <button class="faq-tab" data-tab="listing">Listing Related Questions</button>
+        <button class="faq-tab" data-tab="leads">Lead and Contact Related Questions</button>
+        <button class="faq-tab" data-tab="pricing-faq">Pricing Related Questions</button>
+        <button class="faq-tab" data-tab="platform">Platform Related Questions</button>
+      </div>
+
+      <div class="faq-panels">
+        <div class="faq-panel active" data-panel="general">
+          <div class="faq-item">
+            <button class="faq-q">What is RealLocale?</button>
+            <div class="faq-a">
+              <p>REAL LOCALE is India's first hyper-local real estate platform where brokers post listings only within
+                their own 2 sq km area of operation.</p>
+              <p>We help trusted brokers own their neighbourhood, post local listings, and attract serious buyers and
+                sellers who value local expertise.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q">Who can join RealLocale?</button>
+            <div class="faq-a">
+              <p>RealLocale is designed for:</p>
+              <ul>
+                <li>Independent brokers.</li>
+                <li>Boutique real estate firms.</li>
+                <li>Digital-first real estate professionals.</li>
+                <li>Brokers focused on a specific neighbourhood.</li>
+                <li>Rental and property specialists.</li>
+              </ul>
+              <p>All applications are subject to verification and approval.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q">Is RealLocale a property portal?</button>
+            <div class="faq-a">
+              <p>RealLocale is a hyper-local platform for verified brokers, broker profiles, local listings, and
+                customer enquiries.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-panel" data-panel="zone">
+          <div class="faq-item">
+            <button class="faq-q">What is a local zone?</button>
+            <div class="faq-a">
+              <p>A local zone is the designated pincode and 2 km² area assigned to a broker for local property activity.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q">Can I choose my own area?</button>
+            <div class="faq-a">
+              <p>You can request your preferred pincode and locality. Approval depends on availability, zone rules,
+                verification, and subscription terms.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q">How many brokers can claim one zone?</button>
+            <div class="faq-a">
+              <p>The current model states that only one broker per pincode 2 km² can claim a zone.</p>
+              <p>The final number of brokers permitted in each area will be governed by RealLocale's operating policies.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q">Can I list properties outside my area?</button>
+            <div class="faq-a">
+              <p>RealLocale is designed around local-area focus. Your listing permissions may be limited to your
+                approved zone.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-panel" data-panel="verification">
+          <div class="faq-item">
+            <button class="faq-q">Why does RealLocale verify brokers?</button>
+            <div class="faq-a">
+              <p>Verification helps maintain trust, accountability, and quality within the local broker network.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q">What documents are required?</button>
+            <div class="faq-a">
+              <p>Applicants may be asked to provide identity details, business information, professional information,
+                and other documents required by the verification process.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q">Will I receive a verified badge?</button>
+            <div class="faq-a">
+              <p>Approved brokers may receive a verified badge on their profile according to RealLocale's verification
+                standards.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-panel" data-panel="listing">
+          <div class="faq-item">
+            <button class="faq-q">How many properties can I list?</button>
+            <div class="faq-a">
+              <p>The number of listings at present is 30 but may depend on the applicable plan and platform rules. The
+                broker should receive the final limit before subscription.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q">What types of properties can I post?</button>
+            <div class="faq-a">
+              <p>You may be able to post:</p>
+              <ul>
+                <li>Residential properties.</li>
+                <li>Rental properties.</li>
+                <li>Commercial properties.</li>
+                <li>Land and plots.</li>
+                <li>Other property categories supported by the platform.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q">Can I edit or remove my listings?</button>
+            <div class="faq-a">
+              <p>Yes. Approved brokers should be able to update, replace, pause, or remove listings according to
+                platform rules.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q">Can I use AI-generated listing descriptions?</button>
+            <div class="faq-a">
+              <p>Yes. RealLocale may provide AI-assisted tools for creating listing descriptions. You are responsible
+                for checking that all information is accurate before publishing.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-panel" data-panel="leads">
+          <div class="faq-item">
+            <button class="faq-q">How can Clients contact me?</button>
+            <div class="faq-a">
+              <p>Clients may contact you through the contact options made available on your profile or property listing.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q">Does RealLocale share leads with other brokers?</button>
+            <div class="faq-a">
+              <p>RealLocale is designed around focused local broker access and direct customer contact. The final
+                lead-distribution and enquiry rules will be stated in the platform terms.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q">Are leads guaranteed?</button>
+            <div class="faq-a">
+              <p>No platform can guarantee a specific number of enquiries, sales, rentals, or income. RealLocale is
+                designed to improve local visibility and help Clients discover relevant brokers.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-panel" data-panel="pricing-faq">
+          <div class="faq-item">
+            <button class="faq-q">How much does RealLocale cost?</button>
+            <div class="faq-a">
+              <p>The limited-time launch offer is ₹4,999 per month.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q">Does RealLocale charge commission?</button>
+            <div class="faq-a">
+              <p>The proposed model includes no commission sharing. RealLocale operates through subscription-based
+                access.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q">Are there hidden fees?</button>
+            <div class="faq-a">
+              <p>No hidden fees should apply. Any applicable tax, upgrade, payment, or additional service charge should
+                be displayed before payment.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q">Can I cancel my subscription?</button>
+            <div class="faq-a">
+              <p>You may cancel according to the subscription terms and cancellation policy.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q">What happens if my zone is unavailable?</button>
+            <div class="faq-a">
+              <p>Our team will inform you if the zone is unavailable. You may be placed on a waiting list or advised
+                about other available options.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-panel" data-panel="platform">
+          <div class="faq-item">
+            <button class="faq-q">Will I get a broker profile?</button>
+            <div class="faq-a">
+              <p>Yes. Approved brokers can receive a verified profile with their business details, service area,
+                experience, property specialities, and listings.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q">Will I receive a microsite?</button>
+            <div class="faq-a">
+              <p>The RealLocale feature list includes a personal or company microsite, subject to the selected plan and
+                platform availability.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Still have questions -->
+  <section class="cta-banner">
+    <div class="container cta-banner-inner">
+      <div>
+        <h2>Still Have Questions?</h2>
+        <p>Contact the RealLocale team for help with zone availability, verification, pricing, and onboarding.
+
+        </p>
+      </div>
+      <div class="cta-banner-actions">
+        <a href="#contact" class="btn btn-primary">Contact Us</a>
+        <a href="https://wa.me/918108432649" class="btn btn-outline-light" target="_blank" rel="noopener">
+          Talk to Us on WhatsApp
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+
+  <section class="contact" id="contact">
+    <div class="container contact-inner">
+      <div class="contact-copy">
+        <span class="eyebrow">Contact</span>
+        <h2>Get in Touch</h2>
+        <p>Have a question about zones, pricing, or onboarding? Send us a message and our team will get back to you.</p>
+
+        <div class="contact-details">
+          <div class="contact-detail">
+            <div class="contact-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+            </div>
+            <div class="contact-detail-text">
+              <strong>Address</strong>
+              <span>Lonavala, Maharashtra</span>
+            </div>
+          </div>
+          <div class="contact-detail">
+            <div class="contact-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                </path>
+              </svg>
+            </div>
+            <div class="contact-detail-text">
+              <strong>Phone</strong>
+              <span>+91 81084 32649</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <form class="contact-form" id="contactForm">
+        <div class="form-grid">
+          <div class="form-field">
+            <label for="cf-name">Full name</label>
+            <input type="text" id="cf-name" name="name" required />
+          </div>
+          <div class="form-field">
+            <label for="cf-mobile">Mobile number</label>
+            <input type="tel" id="cf-mobile" name="mobile" required />
+          </div>
+          <div class="form-field">
+            <label for="cf-email">Email address</label>
+            <input type="email" id="cf-email" name="email" required />
+          </div>
+          <div class="form-field">
+            <label for="cf-city">City</label>
+            <input type="text" id="cf-city" name="city" required />
+          </div>
+          <div class="form-field">
+            <label for="cf-pincode">Pincode</label>
+            <input type="text" id="cf-pincode" name="pincode" />
+          </div>
+          <div class="form-field">
+            <label for="cf-locality">Locality</label>
+            <input type="text" id="cf-locality" name="locality" />
+          </div>
+          <div class="form-field">
+            <label for="cf-broker">Broker or company name</label>
+            <input type="text" id="cf-broker" name="broker" />
+          </div>
+          <div class="form-field">
+            <label for="cf-subject">Subject</label>
+            <input type="text" id="cf-subject" name="subject" required />
+          </div>
+          <div class="form-field full">
+            <label for="cf-message">Message</label>
+            <textarea id="cf-message" name="message" rows="4" required></textarea>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary full">Send Message</button>
+        <p class="form-success" id="contactSuccess">Thank you for reaching out! Our team will respond shortly.</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <div class="footer-brand-mark"><img src="assets/footer-logo.svg" alt="RealLocale" class="footer-logo" /></div>
+        <p>India's hyper-local real estate platform for brokers who own their neighbourhood.
+
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Platform</h4>
+        <a href="#about">About</a>
+        <a href="#how-it-works">How it Works</a>
+        <a href="#what-you-get">What you get</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#faq">FAQ</a>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <p><strong>Address:</strong> Lonavala, Maharashtra</p>
+        <p><strong>Phone:</strong> +91 81084 32649</p>
+        <a href="#contact" style="margin-top: 16px;">Contact Us</a>
+        <a href="https://wa.me/918108432649" target="_blank" rel="noopener">
+          WhatsApp
+        </a>
+      </div>
+
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <a href="privacy-policy.html">Privacy Policy</a>
+        <a href="terms-of-service.html">Terms of Service</a>
+        <a href="subscription-terms.html">Subscription Terms</a>
+        <a href="refund-cancellation.html">Refund &amp; Cancellation Policy</a>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>© 2026 RealLocale. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>
