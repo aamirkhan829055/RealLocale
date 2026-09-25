@@ -1,15 +1,55 @@
 document.addEventListener('DOMContentLoaded', function () {
 
-  /* Mobile nav toggle */
+  /* Mobile & Tablet nav toggle */
   var navToggle = document.getElementById('navToggle');
   var mainNav = document.getElementById('mainNav');
   if (navToggle && mainNav) {
-    navToggle.addEventListener('click', function () {
+    navToggle.addEventListener('click', function (e) {
+      e.stopPropagation();
       mainNav.classList.toggle('open');
+      navToggle.classList.toggle('active');
     });
+
     mainNav.querySelectorAll('a').forEach(function (link) {
       link.addEventListener('click', function () {
         mainNav.classList.remove('open');
+        navToggle.classList.remove('active');
+      });
+    });
+
+    // Close menu when clicking outside header
+    document.addEventListener('click', function (e) {
+      if (!mainNav.contains(e.target) && !navToggle.contains(e.target)) {
+        mainNav.classList.remove('open');
+        navToggle.classList.remove('active');
+      }
+    });
+
+    // Close menu when resizing to desktop (>991px)
+    window.addEventListener('resize', function () {
+      if (window.innerWidth > 991) {
+        mainNav.classList.remove('open');
+        navToggle.classList.remove('active');
+      }
+    });
+  }
+
+  /* Pricing Billing Toggle */
+  var pricingToggleBtns = document.querySelectorAll('.pricing-toggle-btn');
+  var pricingGrid = document.getElementById('pricingGrid');
+  if (pricingToggleBtns.length && pricingGrid) {
+    pricingToggleBtns.forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        pricingToggleBtns.forEach(function (b) { b.classList.remove('active'); });
+        btn.classList.add('active');
+        var cycle = btn.getAttribute('data-cycle');
+        if (cycle === 'quarterly') {
+          pricingGrid.classList.remove('monthly-active');
+          pricingGrid.classList.add('quarterly-active');
+        } else {
+          pricingGrid.classList.remove('quarterly-active');
+          pricingGrid.classList.add('monthly-active');
+        }
       });
     });
   }
