@@ -47,6 +47,7 @@ ul {
   margin: 0;
   padding: 0;
 }
+
 h1,
 h2,
 h3 {
@@ -1346,8 +1347,20 @@ p {
   font-size: 13px;
 }
 
-.eyebrow {
-  color: var(--green);
+.problem .eyebrow {
+  color: var(--gold);
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 8px;
+}
+
+
+
+.benefits .eyebrow {
+  color: var(--gold);
   font-weight: 700;
   font-size: 13px;
   letter-spacing: 1px;
