@@ -2581,10 +2581,16 @@ p {
   position: absolute;
   top: 20px;
   right: 20px;
-  background: transparent;
+  background: var(--gold);
   border: none;
+  width: 30px;
+  height: 30px;
   font-size: 28px;
-  color: #71717a;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
   cursor: pointer;
   transition: color 0.2s;
   padding: 4px;
@@ -2794,6 +2800,11 @@ p {
 }
 
 @media (max-width: 768px) {
+  .modal-close {
+    top: 7px;
+    right: 11px;
+  }
+
   .footer-map-widget {
     flex-direction: column;
     align-items: flex-start;
