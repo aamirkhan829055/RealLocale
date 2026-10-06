@@ -105,4 +105,51 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
+
+});
+
+
+
+// form modal join new click button show modal 
+
+document.addEventListener("DOMContentLoaded", function () {
+  const modal = document.getElementById("leadModal");
+  const closeBtn = document.getElementById("closeModal");
+
+  // Open modal on page load after a slight delay
+  setTimeout(() => {
+    // Check if the modal has already been shown in this session
+    if (modal && !sessionStorage.getItem("leadModalShown")) {
+      modal.classList.add("active");
+      document.body.style.overflow = 'hidden';
+      // Mark it as shown so it doesn't open on reload
+      sessionStorage.setItem("leadModalShown", "true");
+    }
+  }, 800); // 800ms delay to feel natural
+
+  // Open modal on links pointing to #lead-form
+  const leadLinks = document.querySelectorAll('a[href$="#lead-form"]');
+  leadLinks.forEach(link => {
+    link.addEventListener("click", function (e) {
+      e.preventDefault();
+      modal.classList.add("active");
+      document.body.style.overflow = 'hidden';
+    });
+  });
+
+  if (closeBtn) {
+    closeBtn.addEventListener("click", function () {
+      modal.classList.remove("active");
+      document.body.style.overflow = '';
+    });
+  }
+
+  if (modal) {
+    modal.addEventListener("click", function (e) {
+      if (e.target === modal) {
+        modal.classList.remove("active");
+        document.body.style.overflow = '';
+      }
+    });
+  }
 });

@@ -146,7 +146,62 @@
       </div>
     </div>
   </footer>
-
+  <!-- Lead Capture Modal Popup -->
+  <div class="modal-overlay" id="leadModal">
+    <div class="modal-content">
+      <button class="modal-close" id="closeModal">&times;</button>
+      <div class="modal-header">
+        <h2>Lead Capture <span class="text-gold">Form</span></h2>
+        <p>Contact us with your pincode and locality to check whether your RealLocale zone is available.</p>
+      </div>
+      <form class="zone-form" id="popupLeadForm">
+        <div class="zone-form-grid">
+          <div class="form-field">
+            <label for="pm-name">Name</label>
+            <input type="text" id="pm-name" name="name" required />
+          </div>
+          <div class="form-field">
+            <label for="pm-mobile">Mobile number</label>
+            <input type="tel" id="pm-mobile" name="mobile" required />
+          </div>
+          <div class="form-field">
+            <label for="pm-email">Email address</label>
+            <input type="email" id="pm-email" name="email" required />
+          </div>
+          <div class="form-field">
+            <label for="pm-city">City</label>
+            <input type="text" id="pm-city" name="city" required />
+          </div>
+          <div class="form-field">
+            <label for="pm-pincode">Pin code</label>
+            <input type="text" id="pm-pincode" name="pincode" required />
+          </div>
+          <div class="form-field">
+            <label for="pm-locality">Locality or neighbourhood</label>
+            <input type="text" id="pm-locality" name="locality" required />
+          </div>
+          <div class="form-field">
+            <label for="pm-broker">Broker or company name</label>
+            <input type="text" id="pm-broker" name="broker" />
+          </div>
+          <div class="form-field">
+            <label for="pm-rera">Rera registration number</label>
+            <input type="text" id="pm-rera" name="rera" />
+          </div>
+          <div class="form-field">
+            <label for="pm-exp">Years of experience</label>
+            <input type="text" id="pm-exp" name="experience" />
+          </div>
+        </div>
+        <div class="zone-form-footer" style="margin-top: 32px;">
+          <p class="zone-footer-disclaimer">*Availability is subject to verification, zone rules, and subscription approval.</p>
+          <div class="zone-footer-action">
+            <button type="submit" class="btn btn-primary-gold zone-submit-btn">Check availability</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
   <script src="js/script.js"></script>
 </body>
 

@@ -2454,27 +2454,6 @@ p {
   transform: scale(1.05);
 }
 
-@media (max-width: 768px) {
-  .footer-map-widget {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 16px;
-    gap: 14px;
-  }
-
-  .footer-map-content {
-    max-width: 100%;
-  }
-
-  .footer-map-title {
-    font-size: 16px;
-  }
-
-  .footer-map-img-box {
-    width: 100%;
-    height: 140px;
-  }
-}
 
 /* Middle Row: Contact Info & Legal Links */
 .footer-middle-row {
@@ -2557,8 +2536,89 @@ p {
   font-weight: 600;
 }
 
-/* ===== Responsive ===== */
+/* Popup Modal Styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(4px);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
 
+.modal-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal-content {
+  background: #fff;
+  border-radius: 16px;
+  width: 90%;
+  max-width: 800px;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+  padding: 40px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  transform: translateY(20px);
+  transition: transform 0.3s ease;
+}
+
+.modal-overlay.active .modal-content {
+  transform: translateY(0);
+}
+
+.modal-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: transparent;
+  border: none;
+  font-size: 28px;
+  color: #71717a;
+  cursor: pointer;
+  transition: color 0.2s;
+  padding: 4px;
+  line-height: 1;
+}
+
+.modal-close:hover {
+  color: #18181b;
+}
+
+.modal-header {
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.modal-header h2 {
+  font-size: 28px;
+  color: var(--green-dark);
+  margin-bottom: 8px;
+}
+
+.modal-header p {
+  color: #52525b;
+  font-size: 15px;
+}
+
+.modal-content .zone-form-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-bottom: 24px;
+}
+
+/* ===== Responsive ===== */
 /* ===== Medium Laptop Header Fix ===== */
 @media (max-width: 1199px) and (min-width: 992px) {
   .header-inner {
@@ -2730,6 +2790,36 @@ p {
   .who-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-map-widget {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 16px;
+    gap: 14px;
+  }
+
+  .footer-map-content {
+    max-width: 100%;
+  }
+
+  .footer-map-title {
+    font-size: 16px;
+  }
+
+  .footer-map-img-box {
+    width: 100%;
+    height: 140px;
+  }
+
+  .modal-content .zone-form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .modal-content {
+    padding: 30px 20px;
   }
 }
 
